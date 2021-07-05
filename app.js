@@ -7,8 +7,10 @@ form.addEventListener('submit', (e) => {
 
     if(!validateEmail(emailVal)){
         form.classList.add('error');
+        emailVal = ""
     }else{
         form.classList.remove('error');
+        emailVal = ""
     }
 });
 
